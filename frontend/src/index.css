@@ -1,0 +1,149 @@
+/* Custom styles for Stitch Designs */
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+.sidebar-transition {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid #E5E7EB;
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.05), 0px 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbc4d2;
+  border-radius: 10px;
+}
+
+@keyframes pulse-width {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.progress-pulse {
+  animation: pulse-width 2s infinite ease-in-out;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.ai-pulse {
+  animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+}
+
+/* --- PREMIUM DARK MODE STYLING --- */
+
+.dark {
+  color-scheme: dark;
+}
+
+/* Background & Body Default */
+.dark body,
+.dark #root,
+.dark .bg-background {
+  background-color: #0f0f11 !important; /* Premium dark background */
+  color: #e4e4e7 !important; /* Zinc-200 text */
+}
+
+/* Text Overrides */
+.dark .text-on-surface,
+.dark .text-on-surface h1,
+.dark .text-on-surface h2,
+.dark .text-on-surface h3,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark .font-bold {
+  color: #f4f4f5 !important; /* Zinc-100 */
+}
+
+.dark .text-on-surface-variant,
+.dark p,
+.dark span:not(.text-primary):not(.material-symbols-outlined) {
+  color: #a1a1aa !important; /* Zinc-400 */
+}
+
+/* Outline / Border color */
+.dark .border-outline-variant,
+.dark border {
+  border-color: #27272a !important; /* Zinc-800 */
+}
+
+/* Surface backgrounds */
+.dark .bg-surface {
+  background-color: #18181b !important; /* Zinc-900 */
+}
+
+.dark .bg-surface-container {
+  background-color: #202024 !important;
+}
+
+.dark .bg-surface-container-low {
+  background-color: #1a1a1e !important;
+}
+
+.dark .bg-surface-container-lowest {
+  background-color: #09090b !important;
+}
+
+.dark .bg-surface-container-high {
+  background-color: #27272a !important;
+}
+
+.dark .bg-surface-container-highest {
+  background-color: #3f3f46 !important;
+}
+
+/* Premium dark glass cards */
+.dark .glass-card {
+  background: rgba(24, 24, 27, 0.8) !important;
+  border-color: #27272a !important;
+}
+
+/* Fix sidebar items hover states */
+.dark .hover\:bg-white\/10:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Header border */
+.dark header {
+  border-bottom-color: #27272a !important;
+}
+
+/* Inputs & Textareas */
+.dark textarea,
+.dark input {
+  color: #f4f4f5 !important;
+}
+
+.dark .bg-surface-container-lowest input,
+.dark .bg-surface-container-lowest textarea {
+  background-color: transparent !important;
+}
